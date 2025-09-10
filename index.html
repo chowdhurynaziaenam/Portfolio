@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chowdhury Nazia Enam Prima | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    #education table {
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background: linear-gradient(to right, #f0f4ff, #f9f9f9);
+    }
+    h2, h3 {
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
+    .section-divider {
+      margin: 3rem 0;
+      border-top: 2px solid #ddd;
+    }
+    .profile-pic-square{
+      display: block;
+      margin: 0 auto 20px;   /* centers image */
+      width: 220px;          /* smaller size */
+      height: 220px;
+      object-fit: cover;     /* crop nicely */
+      border-radius: 8px;    /* makes it circular */
+      border: none; /* adds border */
+  }
+    .gif-right {
+      float: right;
+      margin: 0 0 1rem 1rem;
+      max-width: 400px;
+    }
+    
+    table {
+      width: 100%;
+      margin: 1rem 0;
+    }
+    table th, table td {
+      padding: 0.5rem;
+    }
+    .badge-tech {
+      margin: 3px;
+    }
+    footer {
+      background: #222;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+    }
+    .navbar-custom {
+      background: #004aad;
+    }
+    .navbar-custom .nav-link {
+      color: #fff !important;
+    }
+    .banner-img {
+      height: 75vh;         /* adjust banner height */
+      object-fit: cover !important;      /* ensures full-width without distortion */
+    }
+    .carousel-item img {
+      height: 550px;
+      object-fit: cover;
+    }
+
+    .typing-container {
+      margin-top: -5px;   /* pull it up closer to the banner */
+    }
+    
+    .typing-svg {
+      max-width: 500px;       /* responsive */
+      height: auto;
+    }
+   
+    .pub-img{
+      display: block;          /* makes centering possible */
+      margin: 0 auto 10px;     /* centers the image horizontally + bottom spacing */
+      max-width: 100%; 
+      max-height: 250px;        /* image won’t exceed container width */
+      height: auto;            /* keeps original aspect ratio */
+      object-fit: contain;     /* ensures full image is visible */
+      border-radius: 8px;  
+    }
+    .proj-img {
+    display: block;
+    margin: 0 auto 10px;
+    width: 500px;
+    height: 500px; /* adjust size as needed */
+    object-fit: contain; /* keeps image intact */
+    border-radius: 8px;
+  }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+    <div class="container">
+      <a class="navbar-brand text-white" href="#">Chowdhury Nazia Enam Prima</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+        <span class="navbar-toggler-icon bg-light"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navmenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#awards">Awards</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Sliding Banner directly after navbar -->
+  <div id="bannerCarousel" class="carousel slide" data-bs-ride="carousel  data-bs-interval="3000"">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="image/banner-2.gif" class="d-block w-100 banner-img" alt="Banner 2">
+    </div>
+
+    <div class="carousel-item">
+      <img src="image/banner-1.gif" class="d-block w-100 banner-img" alt="Banner 1">
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#bannerCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#bannerCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+<hr class="section-divider">
+  <!-- Typing Animation -->
+<div class="text-center typing-container">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=25&pause=1000&color=004AAD&center=true&vCenter=true&width=400&lines=Hi+there!+👋;Welcome+to+my+Portfolio!" 
+       alt="Typing Animation" class="typing-svg">
+</div>
+
+  <!-- About -->
+  <div class="container" id="about">
+    <h2 class="text-center">👩‍🎓 About Me</h2>
+    <div class="row align-items-center">
+      <!-- Left: Text -->
+      <div class="col-md-8">
+        <p>I'm a <b>Data Scientist</b> with a strong foundation in <b>statistics, machine learning, and data science</b>. My passion lies in transforming complex data into actionable insights that drive meaningful decisions.</p>
+        <p><b>🎯 Areas of Expertise:</b></p>
+        <ul>
+          <li>🤖 Machine Learning & Deep Learning</li>
+          <li>🏥 Health Data Analysis & Medical AI</li>
+          <li>📊 Statistical Modeling & Predictive Analytics</li>
+        </ul>
+        <p><b>💡 Mission:</b> To explore how data-driven methodologies can learn, adapt, and enhance decision-making while maintaining <b>precision and responsibility</b>.</p>
+      </div>
+      <!-- Right: Image -->
+      <div class="col-md-4 text-center">
+        <img class="profile-pic-square" src="image/profile.jpeg" alt="Profile Picture">
+      </div>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+<!-- Education -->
+<div class="container" id="education">
+  <h2 class="text-center">🎓 Education</h2>
+  <table class="table table-striped text-center align-middle">
+    <thead class="table-primary">
+      <tr>
+        <th>Period</th>
+        <th>Degree</th>
+        <th>Institution</th>
+        <th>Grade</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>08.2022 – 12.2024</td>
+        <td>Master of Science in Data Science, Computing Sciences<br></td>
+        <td>
+          <a href="https://www.tuni.fi/fi" target="_blank">Tampere University, Finland</a>
+        </td>
+        <td>4.62 / 5.00</td>
+      </tr>
+      <tr>
+        <td>01.2016 – 01.2020</td>
+        <td>Bachelor of Science in Information and Communication Engineering</td>
+        <td>
+          <a href="https://bup.edu.bd/" target="_blank">Bangladesh University of Professionals, Bangladesh</a>
+        </td>
+        <td>3.83 / 4.00</td>
+      </tr>
+    </tbody>
+  </table>
+</div> 
+
+<hr class="section-divider">
+
+  <!-- Skills -->
+  <div class="container text-center" id="skills">
+    <h2>🛠️ Skills & Technologies</h2>
+    <div class="row g-4 justify-content-center">
+      <div class="col-md-6">
+         <h5>💻 Programming Languages</h5>
+      <p>
+        <img class="badge-tech" src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white">
+        <img class="badge-tech" src="https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white">
+        <img class="badge-tech" src="https://img.shields.io/badge/SQL-336791?style=for-the-badge&logo=postgresql&logoColor=white">
+        <img class="badge-tech" src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white">
+        <img class="badge-tech" src="https://img.shields.io/badge/MATLAB-0076A8?style=for-the-badge&logo=mathworks&logoColor=white">
+        <img class="badge-tech" src="https://img.shields.io/badge/Prolog-E61B23?style=for-the-badge">
+      </p>
+    </div>
+
+    <!-- ML, Data Science & Visualization -->
+    <div class="col-md-6">
+      <h5>🤖 Machine Learning, Data Science & Visualization</h5>
+      <p>
+        <img class="badge-tech" src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white">
+        <img class="badge-tech" src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white">
+        <img class="badge-tech" src="https://img.shields.io/badge/Scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white">
+        <img class="badge-tech" src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white">
+        <img class="badge-tech" src="https://img.shields.io/badge/Keras-D00000?style=for-the-badge&logo=keras&logoColor=white">
+        <img class="badge-tech" src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white">
+        <img class="badge-tech" src="https://img.shields.io/badge/XGBoost-1F77B4?style=for-the-badge">
+        <img class="badge-tech" src="https://img.shields.io/badge/Auto--sklearn-0E76A8?style=for-the-badge">
+        <img class="badge-tech" src="https://img.shields.io/badge/Weka-3A75C4?style=for-the-badge">
+        <img class="badge-tech" src="https://img.shields.io/badge/Matplotlib-11557c?style=for-the-badge">
+        <img class="badge-tech" src="https://img.shields.io/badge/Seaborn-3776ab?style=for-the-badge">
+      </p>
+    </div>
+
+    <!-- Tools, Platforms, IDEs & Testing -->
+    <div class="col-md-6">
+      <h5>⚙️ Tools, Platforms, & IDEs</h5>
+      <p>
+        <img class="badge-tech" src="https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white">
+        <img class="badge-tech" src="https://img.shields.io/badge/Databricks-FF3621?style=for-the-badge&logo=databricks&logoColor=white">
+        <img class="badge-tech" src="https://img.shields.io/badge/Apache%20Spark-E25A1C?style=for-the-badge&logo=apache-spark&logoColor=white">
+        <img class="badge-tech" src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white">
+        <img class="badge-tech" src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white">
+        <img class="badge-tech" src="https://img.shields.io/badge/IntelliJ_IDEA-000000?style=for-the-badge&logo=intellij-idea&logoColor=white">
+        <img class="badge-tech" src="https://img.shields.io/badge/Visual%20Studio%20Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white">
+        <img class="badge-tech" src="https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino&logoColor=white">
+        <img class="badge-tech" src="https://img.shields.io/badge/PyCharm-21D789?style=for-the-badge&logo=pycharm&logoColor=black">
+        <img class="badge-tech" src="https://img.shields.io/badge/Cisco%20Packet%20Tracer-1BA0D7?style=for-the-badge&logo=cisco&logoColor=white">
+        <img class="badge-tech" src="https://img.shields.io/badge/Selenium%20IDE-43B02A?style=for-the-badge&logo=selenium&logoColor=white">
+        <img class="badge-tech" src="https://img.shields.io/badge/AppPerfect-FF6C37?style=for-the-badge">
+        <img class="badge-tech" src="https://img.shields.io/badge/JMeter-D22128?style=for-the-badge&logo=apachejmeter&logoColor=white">
+      </p>
+    </div>
+
+    <!-- Technical Documentation -->
+    <div class="col-md-6">
+      <h5>📄 Technical Documentation</h5>
+      <p>
+        <img class="badge-tech" src="https://img.shields.io/badge/Microsoft%20Word-2B579A?style=for-the-badge&logo=microsoft-word&logoColor=white">
+        <img class="badge-tech" src="https://img.shields.io/badge/LaTeX-008080?style=for-the-badge&logo=latex&logoColor=white">
+        <img class="badge-tech" src="https://img.shields.io/badge/Microsoft%20Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white">
+        <img class="badge-tech" src="https://img.shields.io/badge/Microsoft%20PowerPoint-B7472A?style=for-the-badge&logo=microsoft-powerpoint&logoColor=white">
+      </p>
+    </div>
+
+  </div>
+</div>
+
+  <hr class="section-divider">
+
+ <!-- Research -->
+<div class="container" id="research">
+  <h2 class="text-center mb-4">📑 Research & Publications</h2>
+  <div class="row">
+
+
+    <!-- Conference Paper -->
+    <div class="col-md-6 mb-4">
+      <div class="card shadow-sm h-100">
+        <div class="card-body">
+          <h5 class="card-title">📄 Conference Paper</h5>
+          <p class="mb-1"><b>Performance Comparison of Machine Learning Techniques in Identifying Dementia from Open Access Clinical Datasets</b> (Springer, 2021)</p>
+          <p class="text-muted">
+            👩‍💻 Authors: Miah, Y., Prima, C.N.E., Seema, S.J., Mahmud, M., Shamim Kaiser, M.
+          </p>
+          <p>
+            🔗 <a href="https://link.springer.com/chapter/10.1007/978-981-15-6048-4_8" target="_blank">Read Paper</a><br>
+          </p>
+          <img src="image/conference_paper.png" alt="Conference Paper" class="pub-img rounded mb-3">
+          <p class="card-text">
+            <ul class="card-text">
+              <li>🔍 This work compared several ML techniques—including SVM, Logistic Regression, ANN, Naive Bayes, Decision Tree, Random Forest, 
+            and KNN—for dementia identification using open-access clinical datasets.</li>
+            <li>📈 Results showed that SVM and Random Forest performed best on datasets such as OASIS, ADNI, and DementiaBank.</li>
+            </ul>
+            
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Research Paper -->
+    <div class="col-md-6 mb-4">
+      <div class="card shadow-sm h-100">
+        <div class="card-body">
+          <h5 class="card-title">📘 Research Paper <span class="badge bg-warning text-dark">Status: Under Review</span>
+          </h5>
+          <p class="mb-1"><b>Early risk factor prediction in chronic kidney disease diagnosis using feature selection and machine learning algorithms</b></p>
+          <p class="text-muted">
+            👩‍💻 Authors: Chowdhury Nazia Enam Prima, Martti Juhola 
+            <p><b>Journal:</b> Methods of Information in Medicine </p> 
+          <img src="image/journalpaper.png" alt="Journal Paper" class="pub-img rounded mb-3">
+          <p class="card-text">
+            <ul class="card-text">
+              <li>🔍 Proposed a methodology for early identification of the top 10 CKD risk factors using feature importance (tree-based models) with sequential feature selector, and ReliefF algorithm.</li>
+              <li>🤖 Tested 8 ML algorithms: RF, DT, SVM, GB, KNN, NB, LR, and an ensemble voting classifier using grid search cross-validation for hyperparameter tuning.</li>
+              <li>📈 Achieved strong performance with accuracies ranging from <b>86% to 98%</b>.</li>
+            </ul>
+
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+  <!-- Academic Theses -->
+  <h3 class="text-center mt-5">🎓 Academic Theses</h3>
+  <table class="table table-striped">
+    <thead>
+      <tr><th>Degree</th><th>Year</th><th>Title</th><th>Focus Areas</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>M.Sc.</td><td>2024</td><td>Early risk factor prediction in chronic kidney disease diagnosis incorporating feature selection and machine learning algorithms 🔗<a href="https://urn.fi/URN:NBN:fi:tuni-202410249455" target="_blank">Read Paper</a></td><td>Machine learning algorithms,Health Data Analytics</td></tr>
+      <tr><td>B.Sc.</td><td>2019</td><td>An Ensemble approach combining machine learning algorithms for improving dementia prediction through parameter tuning</td><td>Ensemble Learning, Machine learning, Disease Prediction</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<hr class="section-divider">
+
+
+
+<!-- Projects -->
+<div class="container" id="projects">
+  <h2 class="text-center mb-4">🚀 Featured Projects</h2>
+  <div class="row g-4">
+
+    <!-- Heart Disease Detection -->
+    <div class="col-md-6">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title">🫀 Heart Disease Detection</h5>
+          <p><b>Goal:</b> Building a predictive classification model to identify individuals with heart disease accurately.</p>
+          <p><b>Tech Stack:</b><br>
+            <img src="https://img.shields.io/badge/Python-3.10-blue.svg?logo=python&logoColor=white">
+            <img src="https://img.shields.io/badge/pandas-Data%20Analysis-blue?logo=pandas">
+            <img src="https://img.shields.io/badge/numpy-Numerical-green?logo=numpy">
+            <img src="https://img.shields.io/badge/matplotlib-Visualization-yellow">
+            <img src="https://img.shields.io/badge/seaborn-Stats%20Plots-lightblue">
+            <img src="https://img.shields.io/badge/scikit--learn-ML-orange?logo=scikitlearn">
+            <img src="https://img.shields.io/badge/Models-9%20Classifiers-success">
+          </p>
+          <img src="image/project1.png" class="proj-img rounded mb-3" alt="Heart Project">
+          <ul>
+            <li>✅ Implemented EDA, Data Preprocessing, and Predictive Modelling using 9 ML algorithms.</li>
+            <li>💡 AdaBoost showed highest accuracy of <b>86.84%</b> with <b>0.93 recall</b>.</li>
+            <li>📊 Most classifiers performed above <b>80% accuracy</b>.</li>
+          </ul>
+          <a href="https://github.com/chowdhurynaziaenam/heart_disease_detection/tree/main" class="btn btn-sm btn-primary" target="_blank">🔗 View Project</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- House Price Prediction -->
+    <div class="col-md-6">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title">🏠 House Price Prediction</h5>
+          <p><b>Goal:</b> Predicting house prices using regression techniques in ML.</p>
+          <p><b>Tech Stack:</b><br>
+            <img src="https://img.shields.io/badge/Python-3.10-blue.svg?logo=python&logoColor=white">
+            <img src="https://img.shields.io/badge/pandas-Data%20Analysis-blue?logo=pandas">
+            <img src="https://img.shields.io/badge/numpy-Numerical-green?logo=numpy">
+            <img src="https://img.shields.io/badge/matplotlib-Visualization-yellow">
+            <img src="https://img.shields.io/badge/seaborn-Stats%20Plots-lightblue">
+            <img src="https://img.shields.io/badge/scikit--learn-ML-orange?logo=scikitlearn">
+            <img src="https://img.shields.io/badge/Models-3%20Regressors-success">
+          </p>
+          <img src="image/project2.png" class="proj-img rounded mb-3" alt="House Project">
+          <ul>
+            <li>✅ Implemented ML models using 3 regressors — RF, LR, and GB.</li>
+            <li>📊 Evaluated models with RMSE, MAE, and R².</li>
+            <li>⭐ Gradient Boosting performed best with <b>R² = 0.82</b> and <b>MAE = 0.14</b>.</li>
+          </ul>
+          <a href="https://github.com/chowdhurynaziaenam/House-Price-Prediction" class="btn btn-sm btn-primary" target="_blank">🔗 View Project</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<hr class="section-divider">
+
+
+
+<!-- Awards -->
+<div class="container" id="awards">
+  <h2 class="text-center">🏅 Awards & Recognition</h2>
+  <table class="table table-bordered text-center align-middle">
+    <thead class="table-light">
+      <tr>
+        <th>Year</th>
+        <th>Title / Role</th>
+        <th>Organization</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>2022</td>
+        <td>🎓 Finland Scholarship</td>
+        <td>Tampere University</td>
+        <td>Recipient of the prestigious Finland Scholarship to pursue M.Sc. in Data Science.</td>
+      </tr>
+      <tr>
+        <td>2019–2020</td>
+        <td>🌐 Social Media Coordinator</td>
+        <td>IEEE BUP Student Branch — Women in Engineering (WIE) Affinity Group</td>
+        <td>
+          Contributed to promoting <b>gender diversity and inclusion in STEM</b> by leading social media outreach campaigns, 
+          creating awareness of research opportunities, and organizing events.
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+  <hr class="section-divider">
+
+  <!-- Contact -->
+<div class="container text-center" id="contact">
+  <h2>📬 Let's Connect!</h2>
+  <p>
+    <a href="mailto:naziaprima23@gmail.com" class="btn btn-outline-danger m-2">
+      <i class="bi bi-envelope"></i> Email
+    </a>
+    <a href="https://www.linkedin.com/in/chowdhury-nazia-enam-prima-604128131/" class="btn btn-outline-primary m-2" target="_blank">
+      <i class="bi bi-linkedin"></i> LinkedIn
+    </a>
+    <a href="https://github.com/chowdhurynaziaenam" class="btn btn-outline-dark m-2" target="_blank">
+      <i class="bi bi-github"></i> GitHub
+    </a>
+    <a href="https://orcid.org/0009-0007-5219-0896" class="btn btn-outline-success m-2" target="_blank">
+      <i class="bi bi-person-badge"></i> ORCID
+    </a>
+  </p>
+</div>
+
+
+  <footer>
+    <p>© <span id="year"></span> Chowdhury Nazia Enam Prima | Data Scientist & ML Engineer</p>
+  </footer>
+
+  <!-- Bootstrap Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
